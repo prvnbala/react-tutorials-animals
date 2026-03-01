@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {}
