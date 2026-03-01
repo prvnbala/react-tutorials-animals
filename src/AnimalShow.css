@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.animal {
+    height: 200px;
+}
+
 .heart {
     position: absolute;
     bottom: 10%;

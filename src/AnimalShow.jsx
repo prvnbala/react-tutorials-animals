@@ -25,7 +25,7 @@ function AnimalShow(props) {
     }
 
     return <div onClick={handleClick} className="animal-show">
-        <img src={animals[props.type]} alt="animal" />
+        <img src={animals[props.type]} alt="animal" className="animal" />
         <img src={HeartImage} alt="heart" style={{"width": 10 + 10*clicks + "px"}} className="heart" />
     </div>;
 }
