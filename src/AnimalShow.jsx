@@ -6,6 +6,7 @@ import DogImage from "./assets/dog.svg"
 import GatorImage from "./assets/gator.svg"
 import HeartImage from "./assets/heart.svg"
 import HorseImage from "./assets/horse.svg"
+import "./AnimalShow.css"
 
 const animals = {
     "bird": BirdImage,
@@ -23,9 +24,9 @@ function AnimalShow(props) {
         setClicks(clicks + 1);
     }
 
-    return <div onClick={handleClick}>
+    return <div onClick={handleClick} className="animal-show">
         <img src={animals[props.type]} alt="animal" />
-        <img src={HeartImage} alt="heart" style={{"width": 10 + 10*clicks + "px"}}/>
+        <img src={HeartImage} alt="heart" style={{"width": 10 + 10*clicks + "px"}} className="heart" />
     </div>;
 }
 
