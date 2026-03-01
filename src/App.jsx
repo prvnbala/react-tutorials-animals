@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='app'>
       <div>Add Random Animals</div>
-      <button onClick={handleClick} className='button'>Add animals</button>
+      <button onClick={handleClick}>Add animals</button>
       <div className="animal-list">{renderedAnimals}</div>
     </div>
   )
