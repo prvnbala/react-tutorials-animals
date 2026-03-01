@@ -16,7 +16,10 @@ const animals = {
 }
 
 function AnimalShow(props) {
-    return <img src={animals[props.type]} alt="" />;
+    return <div>
+        <img src={animals[props.type]} alt="animal" />
+        <img src={HeartImage} alt="heart" />
+    </div>;
 }
 
 export default AnimalShow;
