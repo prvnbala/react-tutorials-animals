@@ -7,7 +7,7 @@ function App() {
 
   function handleClick() {
     setCount(count + 1);
-    setAnimalList([...animalList, <AnimalShow/>]);
+    setAnimalList([...animalList, <AnimalShow type="cow" key={count} />]);
   }
 
   return (

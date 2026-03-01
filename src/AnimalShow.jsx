@@ -6,8 +6,17 @@ import GatorImage from "./assets/gator.svg"
 import HeartImage from "./assets/heart.svg"
 import HorseImage from "./assets/horse.svg"
 
-function AnimalShow() {
-    return <img src={BirdImage} alt="" />;
+const animals = {
+    "bird": BirdImage,
+    "cat": CatImage,
+    "cow": CowImage,
+    "dog": DogImage,
+    "gator": GatorImage,
+    "horse": HorseImage
+}
+
+function AnimalShow(props) {
+    return <img src={animals[props.type]} alt="" />;
 }
 
 export default AnimalShow;
